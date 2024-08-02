@@ -19,6 +19,7 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: center;
+    border: 12px solid green;
 }
 
 .screen {
@@ -28,15 +29,30 @@ h1 {
     top: -10px;
 }
 
-.moodle {
+
+.hungerMoodle{
     position: absolute;
     right: 15px;
     top:15px;
-    width: 20px;
+    width: 22px;
+    display: none;
+}
+.thirstMoodle{
+    position: absolute;
+    right: 35px;
+    top:12px;
+    width: 25px;
+    display: none;
+}
+.happinessMoodle{
+    position: absolute;
+    right: 65px;
+    top:15px;
+    width: 25px;
     display: none;
 }
 
-.moodle.active {
+.active {
     display: block;
 }
 
@@ -47,4 +63,47 @@ h1 {
     position: absolute;
     bottom: 0;
     left: 100px;
+}
+
+.slogan{
+    display: flex;
+    padding: 20px;
+    font-size: 30px;
+    background-color: #E26677;
+    width: fit-content;
+    border-radius: 5px;
+    margin-left: 20px;
+    flex-direction: column;
+}
+
+.practice{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttons{
+    position: absolute;
+    left: 350px;
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: 0px 0px 14px 3px green;
+    font-size: 18px;
+}
+
+.food{
+    top: 700px;
+}
+.drink{
+    top: 600px;
+}
+.play{
+    top: 500px;
+}
+
+.food:hover{
+    font-weight: 600;
+    background-color: green;
+    color: white;
+    cursor: pointer;
 }
