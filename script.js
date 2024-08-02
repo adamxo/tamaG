@@ -19,7 +19,7 @@ function getHungry() {
     console.log(sprite)
 }
 
-setInterval(getHungry, 1000)
+setInterval(getHungry, 1500)
 
 
 
@@ -34,7 +34,7 @@ function getThirsty(){
     sprite.thirst--
 }
 
-setInterval (getThirsty, 1000)
+setInterval (getThirsty, 800)
 
 
 
@@ -48,7 +48,7 @@ function getUnhappy(){
     }
     sprite.happiness--
 }
-setInterval (getUnhappy, 1000)
+setInterval (getUnhappy, 7000)
 
 
 
