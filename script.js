@@ -15,8 +15,6 @@ function getHungry() {
     }
 
     sprite.hunger--
-
-    console.log(sprite)
 }
 
 setInterval(getHungry, 1500)
@@ -55,7 +53,6 @@ setInterval (getUnhappy, 7000)
 const eatSomething = document.querySelector('.food').addEventListener('click', e =>{
     if(sprite.hunger < 100)
         sprite.hunger+=2
-    console.log(sprite)
 })
 
 const drinkSomething = document.querySelector(".drink").addEventListener("click", e => {
