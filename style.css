@@ -4,6 +4,12 @@
     box-sizing: border-box;
 }
 
+body{
+    background-color: #0b0c0c;
+    border: 2px solid grey;
+
+}
+
 h1 {
     color: #E26677;
     font-size: 32px;
@@ -12,13 +18,14 @@ h1 {
 
 .background {
     background-image: url("https://cdn-icons-png.flaticon.com/512/14002/14002320.png");
-    width: 100%;
-    height: 100vh;
+    width: 80%;
+    height: 90vh;
     background-repeat: no-repeat;
     background-position: center;
     display: flex;
     align-items: center;
     justify-content: center;
+
 }
 
 .screen {
@@ -28,15 +35,30 @@ h1 {
     top: -10px;
 }
 
-.moodle {
+
+.hungerMoodle{
     position: absolute;
     right: 15px;
     top:15px;
-    width: 20px;
+    width: 22px;
+    display: none;
+}
+.thirstMoodle{
+    position: absolute;
+    right: 35px;
+    top:12px;
+    width: 27px;
+    display: none;
+}
+.happinessMoodle{
+    position: absolute;
+    right: 60px;
+    top:15px;
+    width: 25px;
     display: none;
 }
 
-.moodle.active {
+.active {
     display: block;
 }
 
@@ -47,4 +69,54 @@ h1 {
     position: absolute;
     bottom: 0;
     left: 100px;
+}
+
+.slogan{
+    display: flex;
+    padding: 20px;
+    font-size: 30px;
+    background-color: #E26677;
+    width: fit-content;
+    border-radius: 5px;
+    margin-left: 20px;
+    flex-direction: column;
+}
+
+.practice{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.btnContainer{
+    display: flex;
+    outline: 3px solid red;
+    justify-content: space-evenly;
+    margin: 10px;
+    width: 80%;
+}
+
+.buttons{
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: 0px 0px 14px 3px green;
+    font-size: 18px;
+}
+
+.food{
+    top: 700px;
+}
+.drink{
+    top: 600px;
+}
+.play{
+    top: 500px;
+}
+
+.food:hover{
+    font-weight: 600;
+    background-color: green;
+    color: white;
+    cursor: pointer;
 }
